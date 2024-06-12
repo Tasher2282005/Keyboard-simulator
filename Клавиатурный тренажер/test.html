@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клавиатурный тренажер</title>
+  <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./style/test.css">
+</head>
+<body>
+  <section class="hero is-success is-fullheight" style="background-color: rgba(216, 198, 175, 0.712);">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head" style="background-color: rgba(255, 255, 255, 0.712);">
+        <header class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="./index.html" class="navbar-item is-size-4  has-text-weight-bold" style="color: black;">
+                        Клавиатурный тренажер
+                    </a>
+                    <span class="navbar-burger" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="./about.html" class="navbar-item   has-text-weight-bold"  style="color: black;"> Теория </a>
+                        <a href="./index.html" class="navbar-item  has-text-weight-bold"  style="color: black;"> Уроки </a>
+                        
+                        <a href="./training.html" class="navbar-item is-active has-text-weight-bold"  style="color: black;"> Тренировка </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="hero-body">
+    <div class="container">
+      <h1 class="title" style="color: black;">Свой текст</h1>
+      <div class="content">
+        <textarea id="textInput" class="textarea" placeholder="Введите ваш текст здесь..."></textarea>
+        <button id="printButton" class="button is-primary">Начать печать</button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Повторите ваш текст</p>
+          <button id="closeModal" class="delete" aria-label="Закрыть"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="original-text">
+            <label for="originalTextInput" class="label">Изначальный текст:</label>
+            <textarea id="originalTextInput" class="textarea" readonly></textarea>
+          </div>
+          <div class="user-text">
+            <label for="userTextInput" class="label">Ваш текст:</label>
+            <textarea id="userTextInput" class="textarea" placeholder="Введите ваш текст здесь..."></textarea>
+          </div>
+          <div>
+            <label for="wpm" style="color: black;">Знаки в минуту:</label>
+            <span id="wpm" style="color: black;">0</span>
+          </div>
+          <div>
+            <label for="accuracy" style="color: black;">Точность:</label>
+            <span id="accuracy" style="color: black;">100%</span>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button id="confirmButton" class="button is-primary" >Подтвердить</button>
+          <button id="cancelButton" class="button">Отмена</button>
+        </footer>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="./script/test.js"></script>
+</body>
+</html>

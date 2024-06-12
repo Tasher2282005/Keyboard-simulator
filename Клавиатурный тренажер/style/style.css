@@ -1,0 +1,56 @@
+.toggle-icon {
+    float: right;
+    color: #ee1717b6; /* цвет значка */
+}
+
+.navbar-item.is-active {
+    background-color: rgba(150, 147, 147, 0.781);
+}
+
+.toggle-question {
+    cursor: pointer;
+    margin-bottom: 10px; /* добавляем отступ снизу */
+}
+
+.toggle-question:hover {
+    color: #f8f8f8b9; /* цвет текста при наведении */
+}
+
+.toggle-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    margin-top: 0;
+}
+
+.toggle-text.show {
+    max-height: 1000px;
+    margin-top: 1em;
+}
+.cell {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; /* Добавляем закругление углов рамки */
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .cell:hover {
+      transform: scale(1.1);
+  }
+
+  .cell-content {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .cell-image {
+      max-width: 150px;
+      max-height: 150px;
+      display: block;
+      margin: 0 auto 10px;
+  }

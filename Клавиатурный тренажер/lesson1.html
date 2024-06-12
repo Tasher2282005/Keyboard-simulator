@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Клавиатурный тренажер</title>
+  <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./style/lesson.css">
+</head>
+<body>
+
+  <section class="hero is-success is-fullheight" style="background-color: rgba(216, 198, 175, 0.712);">
+
+    <div class="hero-head" style="background-color: rgba(255, 255, 255, 0.712);">
+      <header class="navbar">
+          <div class="container">
+              <div class="navbar-brand">
+                  <a href="./index.html" class="navbar-item is-size-4  has-text-weight-bold" style="color: black;">
+                      Клавиатурный тренажер
+                  </a>
+              </div>
+              <div id="navbarMenuHeroC" class="navbar-menu">
+                  <div class="navbar-end">
+                    <a href="./about.html" class="navbar-item  has-text-weight-bold" style="color: black;"> Теория </a>
+
+                      <a class="navbar-item has-text-weight-bold" style="color: black;"> Уроки </a>
+      
+                      <a href="./training.html" class="navbar-item  has-text-weight-bold" style="color: black;"> Тренировка </a>
+                  </div>
+              </div>
+          </div>
+      </header>
+    </div>
+    <div class="hero-body" >
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <div id="timer" class="box" style=" text-align: center; font-size: 20px;">Таймер</div>
+            <div id="lesson" class="box" style=" text-align: center; font-size: 20px; height: 200px;">
+              
+              НАЖМИТЕ ENTER ЧТОБЫ НАЧАТЬ УРОК
+            </div>
+          </div>
+        </div>
+        <div style="height: 35px"></div>
+        <div class="columns">
+          <div class="column is-multiline custom-keyboard">
+            <div id="keyboard" class="keyboard">
+              <!-- Numeric Row -->
+              <div class="columns is-multiline">
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: rgb(255, 255, 255); font-weight: 600;" id="Ё">Ё</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: rgb(255, 255, 255); font-weight: 600;" id="1">1</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: rgb(255, 255, 255); font-weight: 600;" id="2">2</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="3">3</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="4">4</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="5">5</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="6">6</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="7">7</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger " style="color: black; font-weight: 600;" id="8">8</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="9">9</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="0">0</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary"  style="color: black; font-weight: 600;" id="-">-</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary"  style="color: black; font-weight: 600;" id="=">=</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="color: black; font-weight: 600;" id="BACK">BACK</span></div>
+              </div>
+          
+              <!-- QWERTY Row -->
+              <div class="columns is-multiline">
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="color: black; font-weight: 600;" id="TAB">TAB</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: rgb(255, 255, 255); font-weight: 600;" id="Й">Й</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;"id="Ц">Ц</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary " style="color: black; font-weight: 600;" id="У">У</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="К">К</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="Е">Е</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="Н">Н</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="Г">Г</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: black; font-weight: 600;" id="Ш">Ш</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="Щ">Щ</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="З">З</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="Х">Х</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="Ъ">Ъ</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="/">/</span></div>
+                  
+              </div>
+          
+              <!-- Home Row -->
+              <div class="columns is-multiline">
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 92px; font-weight: 600;" id="CAPS">CAPS</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: rgb(255, 255, 255); font-weight: 600;" id="Ф">Ф</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="Ы">Ы</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="В">В</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="А">А</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="П">П</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="Р">Р</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="О">О</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: black; font-weight: 600;" id="Л">Л</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="Д">Д</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="Ж">Ж</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="Э">Э</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 90px; font-weight: 600;" id="ENTER">ENTER</span></div>
+              </div>
+          
+              <!-- Bottom Row -->
+              <div class="columns is-multiline">
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 140px; font-weight: 600;" id="left-shift">SHIFT</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: rgb(255, 255, 255); font-weight: 600;" id="Я">Я</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="Ч">Ч</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="С">С</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="М">М</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-info" style="color: rgb(255, 255, 255); font-weight: 600;" id="И">И</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="Т">Т</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-link" style="color: rgb(255, 255, 255); font-weight: 600;" id="Ь">Ь</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-danger" style="color: black; font-weight: 600;" id="Б">Б</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-warning" style="color: black; font-weight: 600;" id="Ю">Ю</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-primary" style="color: black; font-weight: 600;" id="Dot">.</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 128px; font-weight: 600;" id="right-shift">SHIFT</span></div>
+              </div>
+          
+              <!-- Space and Modifiers -->
+              <div class="columns is-multiline">
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 70px; font-weight: 600;" id="CTRL">CTRL</span></div>
+                  <div class="column is-narrow "><span class="key tag is-large is-light" style="width: 80px; font-weight: 600;" id="WIN">WIN</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 80px; font-weight: 600;" id="ALT">ALT</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 440px; font-weight: 600;" id="SPACE">SPACE</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 80px; font-weight: 600;" id="ALTGR">ALT</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 80px; font-weight: 600;" id="FN">FN</span></div>
+                  <div class="column is-narrow"><span class="key tag is-large is-light" style="width: 70px; font-weight: 600;" id="CTRL">CTRL</span></div>
+              </div>
+              <div class="columns is-multiline">
+                <div class="column is-narrow"><span class="key tag is-large is-danger" style="width: 90px; font-weight: 600;" id="CTRL">Мизинец</span></div>
+                <div class="column is-narrow "><span class="key tag is-large is-warning" style="width: 125px; font-weight: 600;" id="WIN">Безымянный</span></div>
+                <div class="column is-narrow"><span class="key tag is-large is-primary" style="width: 85px; font-weight: 600;" id="ALT">Средний</span></div>
+                <div class="column is-narrow"><span class="key tag is-large" style="width: 220px; font-weight: 600; color: rgb(255, 255, 255); background: linear-gradient(to right, #3e8ed0 50%, #485fc7 50%);" id="SPACE">Указательный</span></div>
+                <div class="column is-narrow"><span class="key tag is-large is-danger" style="width: 85px; font-weight: 600; color: black;" id="ALTGR">Средний</span></div>
+                <div class="column is-narrow"><span class="key tag is-large is-warning" style="width: 125px; font-weight: 600;" id="FN">Безымянный</span></div>
+                <div class="column is-narrow"><span class="key tag is-large is-primary" style="width: 90px; font-weight: 600; color: black;" id="CTRL">Мизинец</span></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Модальное окно для отображения результатов -->
+  <div id="modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <p class="title">Результаты:</p>
+        <p id="timeTaken"></p>
+        <p id="errors"></p>
+        <p id="charactersPerMinute"></p>
+        <div class="buttons">
+          <button id="menuButton" class="button is-primary">Вернуться к урокам</button>
+          <button id="retryButton" class="button is-primary">Повторить урок</button>
+          <button id="nextLesson" class="button is-primary">Следующий урок</button>
+        </div>
+      </div>
+    </div>
+    <button id="modalClose" class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  
+</body>
+<script src="./script/lesson1.js"></script>
+</html>

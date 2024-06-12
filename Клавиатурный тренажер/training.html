@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавиатурный тренажер</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <!-- ОГЛАВЛЕНИЕ -->
+    <section class="hero is-fullheight" style="background-color: rgba(216, 198, 175, 0.712);">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head" style="background-color: rgba(255, 255, 255, 0.712);">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="./index.html" class="navbar-item is-size-4 has-text-weight-bold">
+                            Клавиатурный тренажер
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="./about.html" class="navbar-item has-text-weight-bold"  style="color: black;"> Теория </a>
+
+                            <a href="./index.html" class="navbar-item  has-text-weight-bold"  style="color: black;"> Уроки </a>
+                            
+                            <a href="./training.html" class="navbar-item is-active has-text-weight-bold"  style="color: black;"> Тренировка </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="grid">
+                    <a href="./word.html">
+                        <div class="cell">
+                            <div class="cell-content is-size-4">
+                                <img src="./image/1.png" alt="Image 1" class="cell-image">
+                                <b><p style="color: black;">Тренировка: Слова</p></b>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./test.html">
+                        <div class="cell is-white">
+                            <div class="cell-content is-size-4">
+                                <img src="./image/2.png" alt="Image 2" class="cell-image">
+                                <b><p style="color: black;">Тренировка: Свой Текст</p></b>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+        </div>
+   </section>
+</body>
+
+</html>

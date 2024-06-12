@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавиатурный тренажер</title>
+    <link rel="shortcut icon" href="./image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<!-- ОГЛАВЛЕНИЕ -->
+<section class="hero is-success is-fullheight" style="background-color: rgba(216, 198, 175, 0.712);">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head" style="background-color: rgba(255, 255, 255, 0.712);">
+        <header class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="./index.html" class="navbar-item is-size-4  has-text-weight-bold">
+                        Клавиатурный тренажер
+                    </a>
+                    <span class="navbar-burger" data-target="navbarMenuHeroC">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navbarMenuHeroC" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="./about.html" class="navbar-item is-active  has-text-weight-bold"  style="color: black;"> Теория </a>
+                        <a href="./index.html" class="navbar-item  has-text-weight-bold"  style="color: black;"> Уроки </a>
+                        
+                        <a href="./training.html" class="navbar-item  has-text-weight-bold"  style="color: black;"> Тренировка </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+    <div class="columns is-multiline">
+        <div class="column is-12">
+            <div class="container">
+                <div class="content" >
+                    <h2 class="title is-2 toggle-question" onclick="toggleText('toggleText1', 'toggleIcon1')">
+                        Зачем печатать вслепую?
+                        <span id="toggleIcon1" class="toggle-icon">&#43;</span>
+                    </h2>
+                    <p class="is-size-5 toggle-text" id="toggleText1" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; margin-top: 0; color: rgb(0, 0, 0); font-weight: 600;">
+                        Печать вслепую позволяет повысить скорость и точность набора текста, улучшает концентрацию и эффективность, снижает количество ошибок, приносит профессиональные преимущества и делает процесс набора более удобным и естественным. Тренировка этого навыка может занять время, но в результате позволяет значительно улучшить производительность при работе с компьютером. </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-12">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-2 toggle-question" onclick="toggleText('toggleText2', 'toggleIcon2')">
+                        Методы слепой печати
+                        <span id="toggleIcon2" class="toggle-icon">&#43;</span>
+                    </h2>
+                    <p class="is-size-5 toggle-text" id="toggleText2" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; margin-top: 0; color: rgb(0, 0, 0); font-weight: 600;">
+                        Слепой метод печати — ввод текста на клавиатуре без просмотра клавиш, используя десять пальцев. Пальцы (кроме больших) начинают на клавишах "Ф Ы В А" и "О Л Д Ж" в русской раскладке, или "A S D F" и "J K L :" в английской. Важно строго распределять клавиши между всеми пальцами для быстрой и безошибочной печати.
+                        Постарайтесь не нажимать на клавиши не теми пальцами, чтобы не снизить скорость печати. Для более эффективного изучения метода занимайтесь ежедневно.
+                   </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-12">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-2 toggle-question" onclick="toggleText('toggleText4', 'toggleIcon4')">
+                        Десятипальцевый метод
+                        <span id="toggleIcon4" class="toggle-icon">&#43;</span>
+                    </h2>
+                    <p class="is-size-5 toggle-text" id="toggleText4" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; margin-top: 0; color: rgb(0, 0, 0); font-weight: 600;">
+                        Самый распространенный метод печати на клавиатуре — десятипальцевый. Пальцы рук, кроме больших, начинают на клавишах "Ф Ы В А" и "О Л Д Ж" (русская раскладка) или "A S D F" и "J K L :" (английская раскладка), с большими пальцами над пробелом. Есть альтернативный метод, где исходная позиция находится на клавишах "Ы В А М" и "Т О Л Д", что может быть более естественным. Оба метода основаны на том, что каждый палец нажимает определенные кнопки, что позволяет достичь высокой скорости. Адаптивный метод печати позволяет нажимать каждую кнопку тем пальцем, которым это удобнее в данный момент, что может значительно увеличить скорость печати, хотя требует некоторой практики.   
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column is-12">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-2 toggle-question" onclick="toggleText('toggleText3', 'toggleIcon3')">
+                        Посадка и положение рук
+                        <span id="toggleIcon3" class="toggle-icon">&#43;</span>
+                    </h2>
+                    <p class="is-size-5 toggle-text" id="toggleText3" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; margin-top: 0; color: rgb(0, 0, 0); font-weight: 600;">
+                        Важно правильно сидеть за компьютером: регулируйте высоту стула, сидите прямо, ноги — под столом. Плечи расслаблены, руки свободно опущены, кисти не касаются клавиатуры, локти слегка касаются туловища. Используйте мягкую подкладку под запястья. При наборе текста убедитесь, что локти находятся на уровне клавиатуры, и пальцы располагаются на основной позиции. Важно также следить за положением локтей, чтобы руки оставались свободно опущенными.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="column is-12">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-2 toggle-question" onclick="toggleText('toggleText5', 'toggleIcon5')">
+                        Расположение пальцев
+                        <span id="toggleIcon5" class="toggle-icon">&#43;</span>
+                    </h2>
+                    <p class="is-size-5 toggle-text" id="toggleText5" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; margin-top: 0; color: rgb(0, 0, 0); font-weight: 600;">
+                        Клавиатура компьютера имеет четыре ряда, начинают изучение с основного. Пальцы на основном ряду распределяются по буквам, начиная от "ф" до "а" на левой руке и от "о" до "ж" на правой. К левому указательному пальцу относят – а, п, к, е, м, и, к правому – о, р, н, г, т, ь;
+                        левый средний – у, в, с, правый – ш, л, б;
+                        левый безымянный – ц, ы, ч, правый – щ, д, ю;
+                        левый мизинец – й, ф, я, правый – з, ж, э, х, ъ;
+                        большой палец любой руки (каким удобнее) нажимает на клавишу пробела. Для удобства набора пальцы возвращаются в исходное положение после нажатия клавиши. Переход к верхнему регистру и специальным символам происходит после освоения нижнего регистра. Перед началом набора текста обратите внимание на клавиши: Backspace, Delete, Enter и Space.
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="column is-12">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title is-2 toggle-question" onclick="toggleText('toggleText6', 'toggleIcon6')">
+                        Ритм печати
+                        <span id="toggleIcon6" class="toggle-icon">&#43;</span>
+                    </h2>
+                    <p class="is-size-5 toggle-text" id="toggleText6" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out; margin-top: 0; color: rgb(0, 0, 0); font-weight: 600;">
+                        Ритм печати важен для достижения высокой скорости. Удары по клавишам должны быть точными и энергичными. Пальцы должны подниматься над клавиатурой на 1-2 см и резко ударять по клавише, возвращаясь в исходное положение. Соблюдайте равномерный ритм с увеличением темпа для быстрой печати. Обращайте внимание на безошибочность печати и уделяйте время тренировкам, чтобы автоматизировать движения пальцев.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+</section>
+    <script src="./script/script.js"></script>
+</body>
+</html>

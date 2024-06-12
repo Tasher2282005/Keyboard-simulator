@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавиатурный тренажер</title>
+    <link rel="stylesheet" href="./style/word.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    
+</head>
+<body>
+    <section class="hero is-fullheight" style="background-color: rgba(216, 198, 175, 0.712);">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head" style="background-color: rgba(255, 255, 255, 0.712);">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a href="./index.html" class="navbar-item is-size-4 has-text-weight-bold">
+                            Клавиатурный тренажер
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a href="./about.html" class="navbar-item has-text-weight-bold"  style="color: black;"> Теория </a>
+
+                            <a href="./index.html" class="navbar-item  has-text-weight-bold"  style="color: black;"> Уроки </a>
+                            
+                            <a href="./training.html" class="navbar-item is-active has-text-weight-bold"  style="color: black;"> Тренировка </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-centered is-vcentered">
+                    
+                        <div class="bodyContainer">
+                            <div class="mainContent_Container">
+                                <div class="passage_Container"></div>
+                                <div class="passageInput_Container"><input class="passageInput" type="text"/></div>
+                                <div class="passageInput_hint">Начните печатать выше</div>
+                                <div class="passageInput_miss">&#10006;</div>
+                                <div class="stats_Container">
+                                    <div class="stats">
+                                        <div class="header" style="height: 30px;">Статистика</div>
+                                        <div class="baseContent">
+                                            <h1 style="color: black; font-weight: 600;"><span id="stats_wordsPerMinute" style="color: black; font-weight: 600;">0</span> слов в минуту</h1>
+                                            <div class="baseContent_allStats">
+                                                <table>
+                                                    <tr>
+                                                        <td style="color: black; font-weight: 600;">Осталось времени</td>
+                                                        <td class='right'><span id="stats_timeRemaining" style="color: black; font-weight: 600;">0с</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="color: black; font-weight: 600;">Правильные слова</td>
+                                                        <td class='right'><span id="stats_correctWords" style="color: black; font-weight: 600;">0</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="color: black; font-weight: 600;">Всего символов</td>
+                                                        <td class='right'><span id="stats_totalChars" style="color: black; font-weight: 600;">0</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="color: black; font-weight: 600;">Точность символов</td>
+                                                        <td class='right'><span id="stats_charAcc" style="color: black; font-weight: 600;">0%</span></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="endgame_Container">
+                                    <div class="button" onclick="reload();" style="color: black; font-weight: 600;">Начать новый тест</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+   </section>
+
+   
+    <script src="./script/wordMain.js"></script>
+    <script src="./script/words.js"></script>
+</body>
+</html>
